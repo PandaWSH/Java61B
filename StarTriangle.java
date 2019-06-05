@@ -8,6 +8,6 @@ public class StarTriangle {
 			System.out.println();
 			i += 1;
 		}
-
+		System.out.print('done!')
 	}
 } 
