@@ -1,4 +1,14 @@
 public class SLList {
+	public class Intnode{
+	public int item;
+	public Intnode next;
+
+	public Intnode(int i, Intnode n){
+		item = i;
+		next = n;
+	}
+
+}
 
 	public Intnode first; //this node itself already contains two element, item & next
 	private int size_counter;

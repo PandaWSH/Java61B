@@ -1,5 +1,16 @@
 public class SLList_Sentinal {
 
+	public class Intnode{
+	public int item;
+	public Intnode next;
+
+	public Intnode(int i, Intnode n){
+		item = i;
+		next = n;
+	}
+
+}
+
 	public Intnode sentinal; //always gonna be there, as something to occupy space when empty
 	private int size_counter;
 
