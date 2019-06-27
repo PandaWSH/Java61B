@@ -1,12 +1,12 @@
-public class SLList_Sentinal {
+public class SLList_Sentinal <Blorp> implements List61B <Blorp>{
 
 	public class Intnode{
-	public int item;
-	public Intnode next;
+		public Blorp item;
+		public Intnode next;
 
-	public Intnode(int i, Intnode n){
-		item = i;
-		next = n;
+		public Intnode(Blorp i, Intnode n){
+			item = i;
+			next = n;
 	}
 
 }
@@ -21,7 +21,7 @@ public class SLList_Sentinal {
 	}
 
 	//non-empty list
-	public SLList_Sentinal(int x) {
+	public SLList_Sentinal(Blorp x) {
 		sentinal = new Intnode(777, null); 
 		sentinal.next = new Intnode(x,null); 
 		size_counter = 1;
@@ -30,17 +30,17 @@ public class SLList_Sentinal {
 
 
 	// void addFirst returns nothing but changes 'first'
-	public void addFirst(int x){
+	public void addFirst(Blorp x){
 		//note : sentinal should never be re-assigned
 		sentinal.next = new Intnode(x, sentinal.next);
 		size_counter += 1;
 	}
 
-	public int getFirst(){
+	public Blorp getFirst(){
 		return sentinal.next.item;
 	}
 
-	public void addLast(int x){
+	public void addLast(Blorp x){
 		Intnode p = sentinal;
 		while (p.next != null) {
 			p = p.next;
