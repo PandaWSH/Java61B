@@ -31,7 +31,13 @@ public class chapter2_4{
 
 
 
-
+	/** 
+	Arrays vs Classes
+	Array's:
+			length is not changeable, can call index
+	Class: can be with different type, ex:Planet p = new Planet(6e24, "earth"); c
+		   nanot call index, can use dot notation
+	*/
 
 
 
