@@ -23,3 +23,4 @@ public class quick_union {
 		id[i] = j;
 	}
 }
+// quick union is fastert than quick_find, but the trees could be too tall
