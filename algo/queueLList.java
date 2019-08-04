@@ -23,6 +23,6 @@ public class queueLList{
 		String item = first.item;
 		first = first.next;
 		if(isEmpty()) last = null;
-		return item;
+		return item;git 
 	}
 }
